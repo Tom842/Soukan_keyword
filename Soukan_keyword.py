@@ -1,3 +1,6 @@
+#https://your-3d.com/pytho-mecab-frequencywords/
+#テキストファイルから頻出単語を抽出する
+
 import MeCab
 import csv
 
