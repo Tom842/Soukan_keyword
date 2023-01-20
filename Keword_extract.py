@@ -8,7 +8,12 @@ wordFreq_dic = {}
 wordcount_output = []
 
 #解析テキスト
-text = "今日は楽しい。明日も楽しい。明後日は明日より楽しい。進撃の巨人と約束のネバーランド"
+#テキストファイルを読み込み
+
+#対象のテキストファイルを指定
+textfile = open('C:/hogehoge.txt', 'r', encoding='UTF-8')
+text = textfile.read()
+
 
 #単語頻出度カウント
 def WordFrequencyCount(word):
@@ -49,3 +54,5 @@ wordcount_output = sorted(wordcount_output, key = lambda x:x[1], reverse=True)
 with open("wordcount_dic.csv", "w", encoding="utf-8") as f:
     writer = csv.writer(f, lineterminator="\n")
     writer.writerows(wordcount_output)
+
+    print(f)
