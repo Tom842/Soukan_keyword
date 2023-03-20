@@ -11,7 +11,7 @@ wordcount_output = []
 #テキストファイルを読み込み
 
 #対象のテキストファイルを指定
-textfile = open('C:/Users/tom84/Git/総監_過去問_H26-R04/H25.txt', 'r', encoding='UTF-8')
+textfile = open('C:/Users/フォルダ名/Git/総監_過去問_H26-R04/H25.txt', 'r', encoding='UTF-8')
 text = textfile.read()
 
 #単語頻出度カウント
