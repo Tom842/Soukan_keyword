@@ -2,14 +2,14 @@ import csv
 
 dict_from_csv = {}
 
-with open('C:/Users/tom84/Git/wordcount_dic.csv',encoding='utf-8', mode='r') as wc:
+with open('C:/Users/フォルダ名/Git/wordcount_dic.csv',encoding='utf-8', mode='r') as wc:
     rr = csv.reader(wc)
     dict_from_wc = {rows[0]:rows[1] for rows in rr}
 
 #print(dict_from_wc)
 
 
-with open('C:/Users/tom84/Git/csv_file.csv',encoding='utf-8', mode='r') as inp:
+with open('C:/Users/フォルダ名/Git/csv_file.csv',encoding='utf-8', mode='r') as inp:
     reader = csv.reader(inp)
     dict_from_inp = {rows[0]:rows[1] for rows in reader}
 
